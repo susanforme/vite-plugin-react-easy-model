@@ -1,0 +1,7 @@
+node_modules
+dist
+test.json
+dist-pkg
+logs
+coverage
+.config

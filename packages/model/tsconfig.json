@@ -1,0 +1,31 @@
+{
+  "include": [
+    "src",
+    "*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "package.json",
+    "dist",
+    "test/**"
+  ],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "outDir": "dist",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": false,
+    "useUnknownInCatchVariables": false,
+    "resolveJsonModule": true,
+    "noEmitOnError": false
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
+}
