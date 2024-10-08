@@ -5,3 +5,6 @@ dist-pkg
 logs
 coverage
 .config
+
+dist/cache
+dist/.cache.tsx

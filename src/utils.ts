@@ -92,7 +92,7 @@ export async function createDeclarations(
       const child = exec(
         `tsc ${filePath} --outDir ${path.resolve(
           __dirname,
-          '../dist/cache',
+          './cache',
         )} --declaration --emitDeclarationOnly 
         `,
       );
@@ -106,7 +106,7 @@ export async function createDeclarations(
   };
   const fileUrl = path.resolve(
     __dirname,
-    '../dist/.cache.tsx',
+    './.cache.tsx',
   );
   await fs.writeFile(fileUrl, code, {
     // 不存在则创建
@@ -119,7 +119,7 @@ export async function createDeclarations(
   const cacheUrl = path.resolve(
     __dirname,
     Object.keys(banners.struct).length > 0
-      ? '../dist/cache/model/dist/.cache.d.ts'
+      ? '../dist/cache/dist/.cache.d.ts'
       : '../dist/cache/.cache.d.ts',
   );
   debug.hmr('read cache........', cacheUrl);

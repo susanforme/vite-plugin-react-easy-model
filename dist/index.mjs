@@ -64,7 +64,7 @@ async function createDeclarations(ctx) {
       const child = exec(
         `tsc ${filePath} --outDir ${path.resolve(
           __dirname,
-          "../dist/cache"
+          "./cache"
         )} --declaration --emitDeclarationOnly 
         `
       );
@@ -78,7 +78,7 @@ async function createDeclarations(ctx) {
   };
   const fileUrl = path.resolve(
     __dirname,
-    "../dist/.cache.tsx"
+    "./.cache.tsx"
   );
   await fs.writeFile(fileUrl, code, {
     // 不存在则创建
@@ -89,7 +89,7 @@ async function createDeclarations(ctx) {
   const banners = ctx.getImportBanner();
   const cacheUrl = path.resolve(
     __dirname,
-    Object.keys(banners.struct).length > 0 ? "../dist/cache/model/dist/.cache.d.ts" : "../dist/cache/.cache.d.ts"
+    Object.keys(banners.struct).length > 0 ? "../dist/cache/dist/.cache.d.ts" : "../dist/cache/.cache.d.ts"
   );
   debug.hmr("read cache........", cacheUrl);
   await ensure(() => checkFileAlive(cacheUrl));

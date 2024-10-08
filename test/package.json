@@ -1,5 +1,5 @@
 {
-  "name": "t",
+  "name": "test",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vite-plugin-react-easy-model": "../"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
@@ -25,7 +26,6 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.4",
     "vite-plugin-inspect": "^0.8.5",
-    "vite-plugin-react-easy-model": "../",
     "cross-env": "^7.0.3"
   }
 }
