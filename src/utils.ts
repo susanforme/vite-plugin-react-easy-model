@@ -118,9 +118,7 @@ export async function createDeclarations(
 
   const cacheUrl = path.resolve(
     __dirname,
-    Object.keys(banners.struct).length > 0
-      ? '../dist/cache/dist/.cache.d.ts'
-      : '../dist/cache/.cache.d.ts',
+    '../dist/.cache.d.ts',
   );
   debug.hmr('read cache........', cacheUrl);
   await ensure(() => checkFileAlive(cacheUrl));

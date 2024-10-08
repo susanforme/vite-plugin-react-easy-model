@@ -6,5 +6,6 @@ logs
 coverage
 .config
 
-dist/cache
-dist/.cache.tsx
+dist/*
+!dist/index*
+!dist/templates
