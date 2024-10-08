@@ -76,7 +76,7 @@ async function createDeclarations(ctx) {
         `tsc ${filePath} --outDir ${path__default.resolve(
           __dirname$1,
           "./cache"
-        )} --declaration --emitDeclarationOnly 
+        )}  --declaration --emitDeclarationOnly --allowJs --skipLibCheck  --rootdir ./ 
         `
       );
       child.addListener("close", () => {

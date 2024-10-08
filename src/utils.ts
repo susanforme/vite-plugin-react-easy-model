@@ -93,7 +93,7 @@ export async function createDeclarations(
         `tsc ${filePath} --outDir ${path.resolve(
           __dirname,
           './cache',
-        )} --declaration --emitDeclarationOnly 
+        )}  --declaration --emitDeclarationOnly --allowJs --skipLibCheck  --rootdir ./ 
         `,
       );
       child.addListener('close', () => {
