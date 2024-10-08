@@ -25,6 +25,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.4",
     "vite-plugin-inspect": "^0.8.5",
-    "vite-plugin-react-easy-model": "../"
+    "vite-plugin-react-easy-model": "../",
+    "cross-env": "^7.0.3"
   }
 }
