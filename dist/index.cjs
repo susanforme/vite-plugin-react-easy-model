@@ -100,7 +100,7 @@ async function createDeclarations(ctx) {
   const banners = ctx.getImportBanner();
   const cacheUrl = path__default.resolve(
     __dirname$1,
-    Object.keys(banners.struct).length > 0 ? "../dist/cache/dist/.cache.d.ts" : "../dist/cache/.cache.d.ts"
+    "../dist/.cache.d.ts"
   );
   debug.hmr("read cache........", cacheUrl);
   await ensure(() => checkFileAlive(cacheUrl));
